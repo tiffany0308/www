@@ -1,0 +1,25 @@
+CRITICAL - 2023-07-21 12:36:08 --> Call to undefined method App\Entities\User::verifPassword()
+in APPPATH/Libraries/Authentication.php on line 20.
+ 1 APPPATH/Controllers/Login.php(19): App\libraries\Authentication->login('mary@example.com', '111111')
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->create()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-21 12:37:10 --> Undefined variable $user
+in APPPATH/Entities/User.php on line 9.
+ 1 APPPATH/Entities/User.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'APPPATH/Entities/User.php', 9)
+ 2 APPPATH/Libraries/Authentication.php(20): App\Entities\User->verifyPassword('111111')
+ 3 APPPATH/Controllers/Login.php(19): App\libraries\Authentication->login('mary@example.com', '111111')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->create()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-21 12:49:16 --> Interface "App\Filters\FilterInterface" not found
+in APPPATH/Filters/LoginFilter.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(282): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Filters/LoginFilter.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\LoginFilter')
+ 4 SYSTEMPATH/Filters/Filters.php(166): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\LoginFilter')
+ 5 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('tasks/new', 'before')
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

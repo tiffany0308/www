@@ -1,0 +1,172 @@
+CRITICAL - 2024-01-08 07:07:52 --> Attempt to read property "is_admin" on null
+in APPPATH/Views/Events/index.php on line 15.
+ 1 APPPATH/Views/Events/index.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "is_admin" on null', 'APPPATH/Views/Events/index.php', 15)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/index', [], true)
+ 5 APPPATH/Controllers/Events.php(23): view('Events/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 07:40:23 --> Attempt to read property "is_admin" on null
+in APPPATH/Views/Events/index.php on line 15.
+ 1 APPPATH/Views/Events/index.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "is_admin" on null', 'APPPATH/Views/Events/index.php', 15)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/index', [], true)
+ 5 APPPATH/Controllers/Events.php(23): view('Events/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 07:40:24 --> Attempt to read property "id" on null
+in APPPATH/Controllers/Events.php on line 71.
+ 1 APPPATH/Controllers/Events.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Controllers/Events.php', 71)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->edit('26')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 07:40:26 --> Attempt to read property "id" on null
+in APPPATH/Controllers/Events.php on line 71.
+ 1 APPPATH/Controllers/Events.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Controllers/Events.php', 71)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->edit('26')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 07:40:27 --> Attempt to read property "is_admin" on null
+in APPPATH/Views/Events/show.php on line 54.
+ 1 APPPATH/Views/Events/show.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "is_admin" on null', 'APPPATH/Views/Events/show.php', 54)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/show.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/show', [], true)
+ 5 APPPATH/Controllers/Events.php(37): view('Events/show', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('26')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 07:40:29 --> Attempt to read property "is_admin" on null
+in APPPATH/Views/Events/show.php on line 54.
+ 1 APPPATH/Views/Events/show.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "is_admin" on null', 'APPPATH/Views/Events/show.php', 54)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/show.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/show', [], true)
+ 5 APPPATH/Controllers/Events.php(37): view('Events/show', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('26')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 07:40:30 --> Attempt to read property "is_admin" on null
+in APPPATH/Views/Events/show.php on line 54.
+ 1 APPPATH/Views/Events/show.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "is_admin" on null', 'APPPATH/Views/Events/show.php', 54)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/show.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/show', [], true)
+ 5 APPPATH/Controllers/Events.php(37): view('Events/show', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('26')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 07:40:45 --> Attempt to read property "is_admin" on null
+in APPPATH/Views/Events/index.php on line 15.
+ 1 APPPATH/Views/Events/index.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "is_admin" on null', 'APPPATH/Views/Events/index.php', 15)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/index', [], true)
+ 5 APPPATH/Controllers/Events.php(23): view('Events/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 09:25:40 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH/Controllers/Events.php on line 33.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('undefined')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 09:28:42 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH/Controllers/Events.php on line 33.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('undefined')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 09:40:39 --> Cannot use object of type App\Entities\Event as array
+in APPPATH/Views/Events/index.php on line 128.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/index', [], true)
+ 4 APPPATH/Controllers/Events.php(23): view('Events/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 09:40:44 --> Cannot use object of type App\Entities\Event as array
+in APPPATH/Views/Events/index.php on line 128.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/index', [], true)
+ 4 APPPATH/Controllers/Events.php(23): view('Events/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 09:41:30 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH/Controllers/Events.php on line 33.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('undefined')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 09:44:25 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH/Controllers/Events.php on line 33.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('undefined')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 09:53:48 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH/Controllers/Events.php on line 33.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('undefined')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 09:55:50 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH/Controllers/Events.php on line 33.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('undefined')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 09:57:15 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH/Controllers/Events.php on line 33.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('undefined')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 09:57:21 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH/Controllers/Events.php on line 33.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('undefined')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 10:00:43 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH/Controllers/Events.php on line 33.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('undefined')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 21:37:47 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH/Controllers/Events.php on line 33.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('undefined')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 21:37:55 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH/Controllers/Events.php on line 33.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('undefined')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 21:42:56 --> Class "App\Controllers\PageNotFoundException" not found
+in APPPATH/Controllers/Events.php on line 33.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('undefined')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

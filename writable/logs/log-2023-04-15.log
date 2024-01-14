@@ -1,0 +1,101 @@
+CRITICAL - 2023-04-15 08:48:33 --> Attempt to read property "id" on null
+in APPPATH/Views/Tasks/show.php on line 26.
+ 1 APPPATH/Views/Tasks/show.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Views/Tasks/show.php', 26)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Tasks/show.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Tasks/show', [], true)
+ 5 APPPATH/Controllers/Tasks.php(26): view('Tasks/show', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Tasks->show('(11)')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 08:57:56 --> Attempt to read property "id" on null
+in APPPATH/Views/Tasks/show.php on line 13.
+ 1 APPPATH/Views/Tasks/show.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Views/Tasks/show.php', 13)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Tasks/show.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Tasks/show', [], true)
+ 5 APPPATH/Controllers/Tasks.php(26): view('Tasks/show', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Tasks->show('(11)')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 09:04:46 --> Attempt to read property "id" on null
+in APPPATH/Views/Tasks/show.php on line 13.
+ 1 APPPATH/Views/Tasks/show.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Views/Tasks/show.php', 13)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Tasks/show.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Tasks/show', [], true)
+ 5 APPPATH/Controllers/Tasks.php(26): view('Tasks/show', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Tasks->show('(11)')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 09:09:16 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 1621.
+ 1 SYSTEMPATH/BaseModel.php(1621): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray([], 'update')
+ 3 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update([...], Object(App\Entities\Task))
+ 4 SYSTEMPATH/BaseModel.php(657): CodeIgniter\Model->update('1', Object(App\Entities\Task))
+ 5 APPPATH/Controllers/Tasks.php(80): CodeIgniter\BaseModel->save(Object(App\Entities\Task))
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Tasks->update('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 09:12:15 --> Undefined variable $task
+in APPPATH/Controllers/Tasks.php on line 43.
+ 1 APPPATH/Controllers/Tasks.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $task', 'APPPATH/Controllers/Tasks.php', 43)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Tasks->create()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 09:14:10 --> Undefined variable $task
+in APPPATH/Controllers/Tasks.php on line 43.
+ 1 APPPATH/Controllers/Tasks.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $task', 'APPPATH/Controllers/Tasks.php', 43)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Tasks->create()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 09:14:12 --> Undefined variable $task
+in APPPATH/Controllers/Tasks.php on line 43.
+ 1 APPPATH/Controllers/Tasks.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $task', 'APPPATH/Controllers/Tasks.php', 43)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Tasks->create()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 09:19:36 --> Undefined variable $task
+in APPPATH/Controllers/Tasks.php on line 43.
+ 1 APPPATH/Controllers/Tasks.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $task', 'APPPATH/Controllers/Tasks.php', 43)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Tasks->create()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 09:19:38 --> Undefined variable $task
+in APPPATH/Controllers/Tasks.php on line 43.
+ 1 APPPATH/Controllers/Tasks.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $task', 'APPPATH/Controllers/Tasks.php', 43)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Tasks->create()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 09:22:17 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 1621.
+ 1 SYSTEMPATH/BaseModel.php(1621): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray([], 'update')
+ 3 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update([...], Object(App\Entities\Task))
+ 4 SYSTEMPATH/BaseModel.php(657): CodeIgniter\Model->update('12', Object(App\Entities\Task))
+ 5 APPPATH/Controllers/Tasks.php(78): CodeIgniter\BaseModel->save(Object(App\Entities\Task))
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Tasks->update('12')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-15 09:24:16 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 1621.
+ 1 SYSTEMPATH/BaseModel.php(1621): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray([], 'update')
+ 3 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update([...], Object(App\Entities\Task))
+ 4 SYSTEMPATH/BaseModel.php(657): CodeIgniter\Model->update('12', Object(App\Entities\Task))
+ 5 APPPATH/Controllers/Tasks.php(78): CodeIgniter\BaseModel->save(Object(App\Entities\Task))
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Tasks->update('12')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,946 @@
+ERROR - 2023-06-27 21:55:47 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'admin', 'taskapp', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#8 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#9 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#10 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#7 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#8 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#9 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-27 21:55:47 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `created_at`, `updated_at`) VALUES (:name:, :email:, :created_at:, :updated_at:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Signup->create()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 21:56:54 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'admin', 'taskapp', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#8 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#9 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#10 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#7 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#8 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#9 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-27 21:56:54 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `created_at`, `updated_at`) VALUES (:name:, :email:, :created_at:, :updated_at:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Signup->create()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 22:08:58 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'admin', 'taskapp', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#8 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#9 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#10 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#7 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#8 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#9 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-27 22:08:58 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `created_at`, `updated_at`) VALUES (:name:, :email:, :created_at:, :updated_at:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Signup->create()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 22:45:40 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'admin', 'taskapp', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#8 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#9 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#10 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#7 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#8 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#9 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-27 22:45:40 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `created_at`, `updated_at`) VALUES (:name:, :email:, :created_at:, :updated_at:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Signup->create()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 22:49:06 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'admin', 'taskapp', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#8 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#9 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#10 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#7 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#8 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#9 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-27 22:49:06 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `created_at`, `updated_at`) VALUES (:name:, :email:, :created_at:, :updated_at:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Signup->create()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 22:49:53 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'admin', 'taskapp', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#8 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#9 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#10 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#7 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#8 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#9 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-27 22:49:53 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `created_at`, `updated_at`) VALUES (:name:, :email:, :created_at:, :updated_at:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Signup->create()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 22:51:10 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'admin', 'taskapp', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#8 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#9 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#10 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#7 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#8 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#9 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-27 22:51:10 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `created_at`, `updated_at`) VALUES (:name:, :email:, :created_at:, :updated_at:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Signup->create()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 22:51:39 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'admin', 'taskapp', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#8 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#9 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#10 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#7 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#8 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#9 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-27 22:51:39 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `created_at`, `updated_at`) VALUES (:name:, :email:, :created_at:, :updated_at:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Signup->create()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 22:52:25 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'admin', 'taskapp', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#8 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#9 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#10 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#7 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#8 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#9 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-27 22:52:25 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `created_at`, `updated_at`) VALUES (:name:, :email:, :created_at:, :updated_at:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Signup->create()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 22:55:32 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'admin', 'taskapp', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#8 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#9 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#10 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#7 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#8 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#9 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-27 22:55:32 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `created_at`, `updated_at`) VALUES (:name:, :email:, :created_at:, :updated_at:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Signup->create()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 22:56:25 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'admin', 'taskapp', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#8 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#9 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#10 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#7 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#8 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#9 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-27 22:56:25 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `created_at`, `updated_at`) VALUES (:name:, :email:, :created_at:, :updated_at:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Signup->create()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 22:58:01 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'admin', 'taskapp', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#8 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#9 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#10 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#7 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#8 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#9 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-27 22:58:01 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `created_at`, `updated_at`) VALUES (:name:, :email:, :created_at:, :updated_at:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Signup->create()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 22:59:31 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'admin', 'taskapp', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#8 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#9 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#10 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#7 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#8 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#9 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-27 22:59:31 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `created_at`, `updated_at`) VALUES (:name:, :email:, :created_at:, :updated_at:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Signup->create()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 23:00:35 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'admin', 'taskapp', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#8 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#9 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#10 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#7 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#8 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#9 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-27 23:00:35 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `created_at`, `updated_at`) VALUES (:name:, :email:, :created_at:, :updated_at:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Signup->create()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 23:01:25 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'admin', 'taskapp', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#8 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#9 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#10 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#7 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#8 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#9 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-27 23:01:25 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `created_at`, `updated_at`) VALUES (:name:, :email:, :created_at:, :updated_at:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Signup->create()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 23:02:24 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'admin', 'taskapp', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#8 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#9 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#10 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#7 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#8 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#9 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-27 23:02:24 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `created_at`, `updated_at`) VALUES (:name:, :email:, :created_at:, :updated_at:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Signup->create()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 23:04:04 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'admin', 'taskapp', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#8 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#9 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#10 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#7 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#8 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#9 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-27 23:04:04 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `created_at`, `updated_at`) VALUES (:name:, :email:, :created_at:, :updated_at:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Signup->create()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 23:04:56 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'admin', 'taskapp', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#8 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#9 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#10 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#7 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#8 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#9 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-27 23:04:56 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `created_at`, `updated_at`) VALUES (:name:, :email:, :created_at:, :updated_at:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Signup->create()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 23:06:37 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'admin', 'taskapp', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#8 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#9 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#10 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#7 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#8 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#9 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-27 23:06:37 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `created_at`, `updated_at`) VALUES (:name:, :email:, :created_at:, :updated_at:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Signup->create()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 23:07:02 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'admin', 'taskapp', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#8 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#9 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#10 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#7 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#8 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#9 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-27 23:07:02 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `created_at`, `updated_at`) VALUES (:name:, :email:, :created_at:, :updated_at:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Signup->create()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 23:08:11 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'admin', 'ibdp_cs_ia', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#8 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#9 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#10 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#7 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#8 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#9 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-27 23:08:11 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `created_at`, `updated_at`) VALUES (:name:, :email:, :created_at:, :updated_at:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Signup->create()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 23:08:30 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'root', 'admin', 'ibdp_cs_ia', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#8 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#9 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#10 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+#7 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Signup->create()
+#8 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+#9 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-27 23:08:30 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `created_at`, `updated_at`) VALUES (:name:, :email:, :created_at:, :updated_at:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Signup.php(18): CodeIgniter\Model->insert(Object(App\Entities\User))
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Signup->create()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,138 @@
+CRITICAL - 2023-08-19 10:02:34 --> No file was uploaded.
+in APPPATH/Controllers/Profileimage.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-19 10:12:24 --> The file "HK RISC-V Day 2023.pdf" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-19 10:14:49 --> The file "IMG_5135.jpg" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-19 10:19:17 --> The file "IMG_5135.jpg" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-19 10:23:57 --> The file "Skype_Picture_2023_08_11T06_40_05_224Z.jpeg" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-19 10:25:49 --> The file "Skype_Picture_2023_08_11T06_40_05_224Z.jpeg" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-19 10:30:26 --> The file "HK RISC-V Day 2023.pdf" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-19 10:30:36 --> The file "Math IA.pdf" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-19 10:40:13 --> The file "Skype_Picture_2023_08_11T06_40_05_224Z.jpeg" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-19 11:45:35 --> The file "IMG_5135.jpg" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-19 11:48:06 --> The file "IMG_5136.jpg" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-19 11:51:41 --> The file "IMG_5136.jpg" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-19 11:56:00 --> The file "IMG_5134.jpg" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-19 11:59:38 --> The file "IMG_5135.jpg" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-19 12:02:29 --> The file "IMG_5135.jpg" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-19 12:02:58 --> The file "IMG_5135.jpg" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-19 12:03:08 --> The file "IMG_5135.jpg" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-19 12:03:22 --> The file "IMG_5135.jpg" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-19 12:04:40 --> The file "IMG_5135.jpg" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-19 12:04:44 --> The file "IMG_5135.jpg" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-19 12:11:50 --> The file "IMG_5134.jpg" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-19 12:15:28 --> The file "IMG_5162.jpg" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-19 12:23:24 --> The file "IMG_5162.jpg" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

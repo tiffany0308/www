@@ -1,0 +1,109 @@
+CRITICAL - 2023-08-21 03:26:15 --> The file "IMG_5162.jpg" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-21 04:13:50 --> Your server does not support the GD function required to process this type of image. JPG images are not supported.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 347.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(347): CodeIgniter\Images\Exceptions\ImageException::forInvalidImageCreate('JPG images are not supported.')
+ 2 SYSTEMPATH/Images/Handlers/GDHandler.php(308): CodeIgniter\Images\Handlers\GDHandler->getImageResource('ROOTPATH/writable/uploads/profile_images/1692609230_195c3e368d8c24f4ea25.jpg', 2)
+ 3 SYSTEMPATH/Images/Handlers/GDHandler.php(173): CodeIgniter\Images\Handlers\GDHandler->createImage()
+ 4 SYSTEMPATH/Images/Handlers/GDHandler.php(147): CodeIgniter\Images\Handlers\GDHandler->process('crop')
+ 5 SYSTEMPATH/Images/Handlers/BaseHandler.php(281): CodeIgniter\Images\Handlers\GDHandler->_crop()
+ 6 SYSTEMPATH/Images/Handlers/BaseHandler.php(565): CodeIgniter\Images\Handlers\BaseHandler->crop(200, 200, 0, 0)
+ 7 APPPATH/Controllers/Profileimage.php(51): CodeIgniter\Images\Handlers\BaseHandler->fit(200, 200, 'center')
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-21 04:17:17 --> Attempt to read property "profile_image" on null
+in APPPATH/Views/Profile/show.php on line 9.
+ 1 APPPATH/Views/Profile/show.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "profile_image" on null', 'APPPATH/Views/Profile/show.php', 9)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Profile/show.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Profile/show', [], true)
+ 5 APPPATH/Controllers/Profile.php(18): view('Profile/show', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->show()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-21 05:43:15 --> Undefined constant "App\Controllers\WRIEPATH"
+in APPPATH/Controllers/Profile.php on line 125.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->image()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-21 05:49:55 --> Undefined variable $info
+in APPPATH/Controllers/Profile.php on line 129.
+ 1 APPPATH/Controllers/Profile.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $info', 'APPPATH/Controllers/Profile.php', 129)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profile->image()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-21 11:30:01 --> Undefined variable $remember_me
+in APPPATH/Libraries/Authentication.php on line 36.
+ 1 APPPATH/Libraries/Authentication.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $remember_me', 'APPPATH/Libraries/Authentication.php', 36)
+ 2 APPPATH/Controllers/Login.php(21): App\libraries\Authentication->login('tc003830@gmail.com', 'love2daddy', true)
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->create()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-21 11:35:28 --> Undefined variable $remember_me
+in APPPATH/Libraries/Authentication.php on line 36.
+ 1 APPPATH/Libraries/Authentication.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $remember_me', 'APPPATH/Libraries/Authentication.php', 36)
+ 2 APPPATH/Controllers/Login.php(21): App\libraries\Authentication->login('tc003830@gmail.com', 'love2daddy', true)
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->create()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-21 11:36:23 --> Class "App\Models\Token" not found
+in APPPATH/Models/RememberedLoginModel.php on line 13.
+ 1 APPPATH/Libraries/Authentication.php(48): App\Models\RememberedLoginModel->rememberUserlogin('15')
+ 2 APPPATH/Libraries/Authentication.php(37): App\libraries\Authentication->rememberLogin('15')
+ 3 APPPATH/Controllers/Login.php(21): App\libraries\Authentication->login('tc003830@gmail.com', 'love2daddy', true)
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->create()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-21 11:36:38 --> Class "App\Models\Token" not found
+in APPPATH/Models/RememberedLoginModel.php on line 13.
+ 1 APPPATH/Libraries/Authentication.php(48): App\Models\RememberedLoginModel->rememberUserlogin('15')
+ 2 APPPATH/Libraries/Authentication.php(37): App\libraries\Authentication->rememberLogin('15')
+ 3 APPPATH/Controllers/Login.php(21): App\libraries\Authentication->login('tc003830@gmail.com', 'love2daddy', true)
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->create()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-21 21:28:50 --> Call to a member function setCookie() on null
+in APPPATH/Libraries/Authentication.php on line 52.
+ 1 APPPATH/Libraries/Authentication.php(37): App\libraries\Authentication->rememberLogin('15')
+ 2 APPPATH/Controllers/Login.php(21): App\libraries\Authentication->login('tc003830@gmail.com', 'love2daddy', true)
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->create()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-21 21:33:10 --> Call to a member function setCookie() on null
+in APPPATH/Libraries/Authentication.php on line 52.
+ 1 APPPATH/Libraries/Authentication.php(37): App\libraries\Authentication->rememberLogin('15')
+ 2 APPPATH/Controllers/Login.php(21): App\libraries\Authentication->login('tc003830@gmail.com', 'love2daddy', true)
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->create()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-21 21:34:12 --> Call to a member function setCookie() on null
+in APPPATH/Libraries/Authentication.php on line 52.
+ 1 APPPATH/Libraries/Authentication.php(37): App\libraries\Authentication->rememberLogin('15')
+ 2 APPPATH/Controllers/Login.php(21): App\libraries\Authentication->login('tc003830@gmail.com', 'love2daddy', true)
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->create()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-21 21:34:43 --> Call to a member function setCookie() on null
+in APPPATH/Libraries/Authentication.php on line 52.
+ 1 APPPATH/Libraries/Authentication.php(37): App\libraries\Authentication->rememberLogin('15')
+ 2 APPPATH/Controllers/Login.php(21): App\libraries\Authentication->login('tc003830@gmail.com', 'love2daddy', true)
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->create()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

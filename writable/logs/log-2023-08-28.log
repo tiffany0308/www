@@ -1,0 +1,40 @@
+CRITICAL - 2023-08-28 04:02:13 --> Undefined variable $toke
+in APPPATH/Entities/User.php on line 20.
+ 1 APPPATH/Entities/User.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $toke', 'APPPATH/Entities/User.php', 20)
+ 2 APPPATH/Controllers/Signup.php(20): App\Entities\User->startActivation()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Signup->create()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 04:02:26 --> Undefined variable $toke
+in APPPATH/Entities/User.php on line 20.
+ 1 APPPATH/Entities/User.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $toke', 'APPPATH/Entities/User.php', 20)
+ 2 APPPATH/Controllers/Signup.php(20): App\Entities\User->startActivation()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Signup->create()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 04:12:47 --> Undefined variable $toke
+in APPPATH/Entities/User.php on line 20.
+ 1 APPPATH/Entities/User.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $toke', 'APPPATH/Entities/User.php', 20)
+ 2 APPPATH/Controllers/Signup.php(20): App\Entities\User->startActivation()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Signup->create()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 04:16:26 --> Undefined variable $toke
+in APPPATH/Entities/User.php on line 20.
+ 1 APPPATH/Entities/User.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $toke', 'APPPATH/Entities/User.php', 20)
+ 2 APPPATH/Controllers/Signup.php(20): App\Entities\User->startActivation()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Signup->create()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 04:17:04 --> Undefined variable $toke
+in APPPATH/Entities/User.php on line 20.
+ 1 APPPATH/Entities/User.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $toke', 'APPPATH/Entities/User.php', 20)
+ 2 APPPATH/Controllers/Signup.php(18): App\Entities\User->startActivation()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Signup->create()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Signup))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

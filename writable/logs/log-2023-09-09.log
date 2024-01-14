@@ -1,0 +1,244 @@
+ERROR - 2023-09-09 05:18:31 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'admin', 'taskapp', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /var/www/html/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /var/www/html/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 /var/www/html/app/Models/EventModel.php(60): CodeIgniter\BaseModel->paginate(5)
+#7 /var/www/html/app/Controllers/Events.php(19): App\Models\EventModel->paginateAllEvents()
+#8 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Events->index()
+#9 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+#10 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 /var/www/html/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 /var/www/html/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#5 /var/www/html/app/Models/EventModel.php(60): CodeIgniter\BaseModel->paginate(5)
+#6 /var/www/html/app/Controllers/Events.php(19): App\Models\EventModel->paginateAllEvents()
+#7 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Events->index()
+#8 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+#9 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-09-09 05:18:31 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `event`', [], false)
+ 3 SYSTEMPATH/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH/Models/EventModel.php(60): CodeIgniter\BaseModel->paginate(5)
+ 6 APPPATH/Controllers/Events.php(19): App\Models\EventModel->paginateAllEvents()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-09 05:22:32 --> Attempt to read property "is_admin" on null
+in APPPATH/Views/Events/show.php on line 34.
+ 1 APPPATH/Views/Events/show.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "is_admin" on null', 'APPPATH/Views/Events/show.php', 34)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/show.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/show', [], true)
+ 5 APPPATH/Controllers/Events.php(32): view('Events/show', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-09 05:23:53 --> Attempt to read property "is_admin" on null
+in APPPATH/Views/Events/show.php on line 34.
+ 1 APPPATH/Views/Events/show.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "is_admin" on null', 'APPPATH/Views/Events/show.php', 34)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/show.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/show', [], true)
+ 5 APPPATH/Controllers/Events.php(32): view('Events/show', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-09 05:26:22 --> Attempt to read property "is_admin" on null
+in APPPATH/Views/Events/show.php on line 34.
+ 1 APPPATH/Views/Events/show.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "is_admin" on null', 'APPPATH/Views/Events/show.php', 34)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/show.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/show', [], true)
+ 5 APPPATH/Controllers/Events.php(32): view('Events/show', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-09 05:26:29 --> Attempt to read property "is_admin" on null
+in APPPATH/Views/Events/show.php on line 34.
+ 1 APPPATH/Views/Events/show.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "is_admin" on null', 'APPPATH/Views/Events/show.php', 34)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/show.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/show', [], true)
+ 5 APPPATH/Controllers/Events.php(32): view('Events/show', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-09 05:27:12 --> Attempt to read property "id" on null
+in APPPATH/Views/Events/show.php on line 36.
+ 1 APPPATH/Views/Events/show.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Views/Events/show.php', 36)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/show.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/show', [], true)
+ 5 APPPATH/Controllers/Events.php(32): view('Events/show', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-09 05:34:09 --> Attempt to read property "is_admin" on null
+in APPPATH/Views/Events/show.php on line 34.
+ 1 APPPATH/Views/Events/show.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "is_admin" on null', 'APPPATH/Views/Events/show.php', 34)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/show.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/show', [], true)
+ 5 APPPATH/Controllers/Events.php(32): view('Events/show', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-09 05:34:38 --> Attempt to read property "is_admin" on null
+in APPPATH/Views/Events/show.php on line 34.
+ 1 APPPATH/Views/Events/show.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "is_admin" on null', 'APPPATH/Views/Events/show.php', 34)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/show.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/show', [], true)
+ 5 APPPATH/Controllers/Events.php(32): view('Events/show', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-09 05:36:16 --> Attempt to read property "is_admin" on null
+in APPPATH/Views/Events/show.php on line 34.
+ 1 APPPATH/Views/Events/show.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "is_admin" on null', 'APPPATH/Views/Events/show.php', 34)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/show.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/show', [], true)
+ 5 APPPATH/Controllers/Events.php(32): view('Events/show', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-09 05:39:13 --> Attempt to read property "is_admin" on null
+in APPPATH/Views/Events/show.php on line 34.
+ 1 APPPATH/Views/Events/show.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "is_admin" on null', 'APPPATH/Views/Events/show.php', 34)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/show.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/show', [], true)
+ 5 APPPATH/Controllers/Events.php(32): view('Events/show', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-09 05:59:58 --> Attempt to read property "is_admin" on null
+in APPPATH/Views/Events/show.php on line 34.
+ 1 APPPATH/Views/Events/show.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "is_admin" on null', 'APPPATH/Views/Events/show.php', 34)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/show.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/show', [], true)
+ 5 APPPATH/Controllers/Events.php(32): view('Events/show', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-09 12:08:42 --> Attempt to read property "approval" on array
+in APPPATH/Views/Events/approval.php on line 9.
+ 1 APPPATH/Views/Events/approval.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "approval" on array', 'APPPATH/Views/Events/approval.php', 9)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/approval.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/approval', [], true)
+ 5 APPPATH/Controllers/Events.php(139): view('Events/approval', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->approval()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-09 12:09:58 --> Undefined variable $event
+in APPPATH/Views/Events/approval.php on line 9.
+ 1 APPPATH/Views/Events/approval.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $event', 'APPPATH/Views/Events/approval.php', 9)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/approval.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/approval', [], true)
+ 5 APPPATH/Controllers/Events.php(139): view('Events/approval', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->approval()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-09 12:10:44 --> Undefined variable $id
+in APPPATH/Controllers/Events.php on line 137.
+ 1 APPPATH/Controllers/Events.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH/Controllers/Events.php', 137)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->approval()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-09 12:13:57 --> Undefined variable $event
+in APPPATH/Views/Events/approval.php on line 9.
+ 1 APPPATH/Views/Events/approval.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $event', 'APPPATH/Views/Events/approval.php', 9)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/approval.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/approval', [], true)
+ 5 APPPATH/Controllers/Events.php(139): view('Events/approval', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->approval()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-09 12:14:18 --> Undefined variable $event
+in APPPATH/Views/Events/approval.php on line 9.
+ 1 APPPATH/Views/Events/approval.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $event', 'APPPATH/Views/Events/approval.php', 9)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/approval.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/approval', [], true)
+ 5 APPPATH/Controllers/Events.php(140): view('Events/approval', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->approval()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-09 12:17:32 --> Undefined variable $data
+in APPPATH/Views/Events/approval.php on line 9.
+ 1 APPPATH/Views/Events/approval.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH/Views/Events/approval.php', 9)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/approval.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/approval', [], true)
+ 5 APPPATH/Controllers/Events.php(139): view('Events/approval', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->approval()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-09 12:20:08 --> Undefined variable $event
+in APPPATH/Views/Events/approval.php on line 9.
+ 1 APPPATH/Views/Events/approval.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $event', 'APPPATH/Views/Events/approval.php', 9)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/approval.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/approval', [], true)
+ 5 APPPATH/Controllers/Events.php(139): view('Events/approval', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->approval()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-09 12:21:12 --> Attempt to read property "approval" on array
+in APPPATH/Views/Events/approval.php on line 9.
+ 1 APPPATH/Views/Events/approval.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "approval" on array', 'APPPATH/Views/Events/approval.php', 9)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/approval.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/approval', [], true)
+ 5 APPPATH/Controllers/Events.php(139): view('Events/approval', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->approval()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-09 12:33:37 --> Too few arguments to function App\Controllers\Events::unapprove(), 0 passed in /var/www/html/system/CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH/Controllers/Events.php on line 133.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->unapprove()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,116 @@
+CRITICAL - 2023-04-18 05:40:18 --> syntax error, unexpected token "private"
+in APPPATH/Controllers/Tasks.php on line 11.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('tasks/show/12')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('tasks/show/12')
+ 3 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\Router->handle('tasks/show/12')
+ 4 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 10:12:56 --> Attempt to read property "id" on null
+in APPPATH/Views/Tasks/show.php on line 13.
+ 1 APPPATH/Views/Tasks/show.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Views/Tasks/show.php', 13)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Tasks/show.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Tasks/show', [], true)
+ 5 APPPATH/Controllers/Tasks.php(30): view('Tasks/show', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Tasks->show('2324r')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 10:13:01 --> Attempt to read property "id" on null
+in APPPATH/Views/Tasks/show.php on line 13.
+ 1 APPPATH/Views/Tasks/show.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Views/Tasks/show.php', 13)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Tasks/show.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Tasks/show', [], true)
+ 5 APPPATH/Controllers/Tasks.php(30): view('Tasks/show', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Tasks->show('2324')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 10:25:23 --> syntax error, unexpected token "}"
+in APPPATH/Controllers/Tasks.php on line 30.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('tasks/show/2324')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('tasks/show/2324')
+ 3 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\Router->handle('tasks/show/2324')
+ 4 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 10:25:36 --> syntax error, unexpected token "}"
+in APPPATH/Controllers/Tasks.php on line 30.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('tasks/show/2324')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('tasks/show/2324')
+ 3 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\Router->handle('tasks/show/2324')
+ 4 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 10:26:02 --> Undefined variable $task
+in APPPATH/Controllers/Tasks.php on line 27.
+ 1 APPPATH/Controllers/Tasks.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $task', 'APPPATH/Controllers/Tasks.php', 27)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Tasks->show('2324')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 10:44:56 --> Invalid file: Task/delete.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Task/delete.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Task/delete', [], true)
+ 3 APPPATH/Controllers/Tasks.php(101): view('Task/delete', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Tasks->delete('1')
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 10:45:10 --> Invalid file: Task/delete.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Task/delete.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Task/delete', [], true)
+ 3 APPPATH/Controllers/Tasks.php(101): view('Task/delete', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Tasks->delete('1')
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 10:46:31 --> Invalid file: Task/delete.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Task/delete.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Task/delete', [], true)
+ 3 APPPATH/Controllers/Tasks.php(101): view('Task/delete', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Tasks->delete('1')
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 10:46:59 --> Invalid file: Task/delete.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Task/delete.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Task/delete', [], true)
+ 3 APPPATH/Controllers/Tasks.php(101): view('Task/delete', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Tasks->delete('1')
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 10:47:03 --> Invalid file: Task/delete.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Task/delete.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Task/delete', [], true)
+ 3 APPPATH/Controllers/Tasks.php(101): view('Task/delete', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Tasks->delete('1')
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 10:49:13 --> Invalid file: Task/delete.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Task/delete.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Task/delete', [], true)
+ 3 APPPATH/Controllers/Tasks.php(101): view('Task/delete', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Tasks->delete('1')
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 10:49:16 --> Invalid file: Task/delete.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Task/delete.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Task/delete', [], true)
+ 3 APPPATH/Controllers/Tasks.php(101): view('Task/delete', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Tasks->delete('1')
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

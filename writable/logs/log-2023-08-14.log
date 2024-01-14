@@ -1,0 +1,269 @@
+ERROR - 2023-08-14 02:32:07 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-08-14 02:32:07 --> 220 smtp.gmail.com ESMTP p16-20020a62ab10000000b00682562bf477sm7292875pff.82 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [223.18.149.7]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [223.18.149.7]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 530-5.7.0 Authentication Required. Learn more at
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError p16-20020a62ab10000000b00682562bf477sm7292875pff.82 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. Learn more at
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError p16-20020a62ab10000000b00682562bf477sm7292875pff.82 - gsmtp
+
+quit: 221 2.0.0 closing connection p16-20020a62ab10000000b00682562bf477sm7292875pff.82 - gsmtp
+
+ERROR - 2023-08-14 02:40:58 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-08-14 02:40:58 --> 220 smtp.gmail.com ESMTP i16-20020a170902c95000b001b8c6890623sm8667427pla.7 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [223.18.149.7]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [223.18.149.7]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 530-5.7.0 Authentication Required. Learn more at
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError i16-20020a170902c95000b001b8c6890623sm8667427pla.7 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. Learn more at
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError i16-20020a170902c95000b001b8c6890623sm8667427pla.7 - gsmtp
+
+quit: 221 2.0.0 closing connection i16-20020a170902c95000b001b8c6890623sm8667427pla.7 - gsmtp
+
+ERROR - 2023-08-14 02:41:11 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-08-14 02:41:11 --> 220 smtp.gmail.com ESMTP a7-20020a170902ecc700b001aaecc0b6ffsm8679745plh.160 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [223.18.149.7]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [223.18.149.7]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 530-5.7.0 Authentication Required. Learn more at
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError a7-20020a170902ecc700b001aaecc0b6ffsm8679745plh.160 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. Learn more at
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError a7-20020a170902ecc700b001aaecc0b6ffsm8679745plh.160 - gsmtp
+
+quit: 221 2.0.0 closing connection a7-20020a170902ecc700b001aaecc0b6ffsm8679745plh.160 - gsmtp
+
+ERROR - 2023-08-14 02:47:40 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-08-14 02:47:40 --> 220 smtp.gmail.com ESMTP x52-20020a056a000bf400b006870c50efaesm7373374pfu.9 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [223.18.149.7]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [223.18.149.7]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 530-5.7.0 Authentication Required. Learn more at
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError x52-20020a056a000bf400b006870c50efaesm7373374pfu.9 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. Learn more at
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError x52-20020a056a000bf400b006870c50efaesm7373374pfu.9 - gsmtp
+
+quit: 221 2.0.0 closing connection x52-20020a056a000bf400b006870c50efaesm7373374pfu.9 - gsmtp
+
+ERROR - 2023-08-14 03:17:55 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-08-14 03:17:55 --> 220 smtp.gmail.com ESMTP iw12-20020a170903044c00b001bb9d6b1baasm8749001plb.198 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [223.18.149.7]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [223.18.149.7]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 530-5.7.0 Authentication Required. Learn more at
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError iw12-20020a170903044c00b001bb9d6b1baasm8749001plb.198 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. Learn more at
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError iw12-20020a170903044c00b001bb9d6b1baasm8749001plb.198 - gsmtp
+
+quit: 221 2.0.0 closing connection iw12-20020a170903044c00b001bb9d6b1baasm8749001plb.198 - gsmtp
+
+ERROR - 2023-08-14 03:30:19 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-08-14 03:30:19 --> 220 smtp.gmail.com ESMTP mg22-20020a17090b371600b0026b46ad94c9sm2821077pjb.24 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [223.18.149.7]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [223.18.149.7]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 530-5.7.0 Authentication Required. Learn more at
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError mg22-20020a17090b371600b0026b46ad94c9sm2821077pjb.24 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. Learn more at
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError mg22-20020a17090b371600b0026b46ad94c9sm2821077pjb.24 - gsmtp
+
+quit: 221 2.0.0 closing connection mg22-20020a17090b371600b0026b46ad94c9sm2821077pjb.24 - gsmtp
+
+ERROR - 2023-08-14 03:38:19 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-08-14 03:38:19 --> 220 smtp.gmail.com ESMTP jf7-20020a170903268700b001b9f032bb3dsm8870319plb.3 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [223.18.149.7]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [223.18.149.7]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 530-5.7.0 Authentication Required. Learn more at
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError jf7-20020a170903268700b001b9f032bb3dsm8870319plb.3 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. Learn more at
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError jf7-20020a170903268700b001b9f032bb3dsm8870319plb.3 - gsmtp
+
+quit: 221 2.0.0 closing connection jf7-20020a170903268700b001b9f032bb3dsm8870319plb.3 - gsmtp
+
+ERROR - 2023-08-14 03:41:13 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-08-14 03:41:13 --> 220 smtp.gmail.com ESMTP ij13-20020a170902ab4d00b001bb04755212sm8951686plb.228 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [223.18.149.7]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [223.18.149.7]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 530-5.7.0 Authentication Required. Learn more at
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError ij13-20020a170902ab4d00b001bb04755212sm8951686plb.228 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. Learn more at
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError ij13-20020a170902ab4d00b001bb04755212sm8951686plb.228 - gsmtp
+
+quit: 221 2.0.0 closing connection ij13-20020a170902ab4d00b001bb04755212sm8951686plb.228 - gsmtp
+
+ERROR - 2023-08-14 03:48:02 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-08-14 03:48:02 --> You did not specify a SMTP hostname.
+ERROR - 2023-08-14 03:50:29 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-08-14 03:50:29 --> You did not specify a SMTP hostname.
+ERROR - 2023-08-14 03:52:12 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-08-14 03:52:12 --> You did not specify a SMTP hostname.
+ERROR - 2023-08-14 03:53:00 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to smtp.gmail.com:25 (Connection timed out) in /var/www/html/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): Un...', '/var/www/html/s...', 1863)
+#1 /var/www/html/system/Email/Email.php(1863): fsockopen('smtp.gmail.com', 25, NULL, NULL, 5)
+#2 /var/www/html/system/Email/Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/html/system/Email/Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/html/system/Email/Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/html/app/Controllers/Home.php(22): CodeIgniter\Email\Email->send()
+#6 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Home->testEmail()
+#7 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-08-14 03:53:00 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-08-14 03:53:00 --> 

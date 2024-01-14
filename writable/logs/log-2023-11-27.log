@@ -1,0 +1,34 @@
+CRITICAL - 2023-11-27 21:01:49 --> Class "App\Models\JoinModel" not found
+in APPPATH/Controllers/Joinevent.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\JoinEvent->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 21:03:09 --> Class "App\Entities\Join" not found
+in APPPATH/Controllers/Joinevent.php on line 22.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\JoinEvent->showJoinEventForm('2')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JoinEvent))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 21:03:48 --> Undefined variable $volunteer
+in APPPATH/Views/JoinEvent/form.php on line 22.
+ 1 APPPATH/Views/JoinEvent/form.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $volunteer', 'APPPATH/Views/JoinEvent/form.php', 22)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/JoinEvent/form.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('JoinEvent/form', [], true)
+ 5 APPPATH/Controllers/Joinevent.php(26): view('JoinEvent/form', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\JoinEvent->showJoinEventForm('2')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JoinEvent))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 21:04:37 --> Undefined variable $joinevent
+in APPPATH/Views/JoinEvent/form.php on line 22.
+ 1 APPPATH/Views/JoinEvent/form.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $joinevent', 'APPPATH/Views/JoinEvent/form.php', 22)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/JoinEvent/form.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('JoinEvent/form', [], true)
+ 5 APPPATH/Controllers/Joinevent.php(26): view('JoinEvent/form', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\JoinEvent->showJoinEventForm('2')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JoinEvent))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

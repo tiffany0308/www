@@ -1,0 +1,115 @@
+CRITICAL - 2023-09-24 09:43:10 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 867.
+ 1 SYSTEMPATH/BaseModel.php(867): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update([...], [])
+ 3 SYSTEMPATH/BaseModel.php(657): CodeIgniter\Model->update('1', Object(App\Entities\Event))
+ 4 APPPATH/Controllers/Events.php(166): CodeIgniter\BaseModel->save(Object(App\Entities\Event))
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->approveEvent('1')
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 10:44:04 --> Call to undefined method App\Entities\Event::update()
+in APPPATH/Controllers/Events.php on line 164.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->approveEvent('1')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 10:45:33 --> Call to undefined method App\Entities\Event::save()
+in APPPATH/Controllers/Events.php on line 165.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->approveEvent('1')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 10:49:59 --> Undefined variable $event
+in APPPATH/Controllers/Events.php on line 160.
+ 1 APPPATH/Controllers/Events.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $event', 'APPPATH/Controllers/Events.php', 160)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->approveEvent('1')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 10:50:21 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 867.
+ 1 SYSTEMPATH/BaseModel.php(867): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update([...], [])
+ 3 SYSTEMPATH/BaseModel.php(657): CodeIgniter\Model->update('1', Object(App\Entities\Event))
+ 4 APPPATH/Controllers/Events.php(166): CodeIgniter\BaseModel->save(Object(App\Entities\Event))
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->approveEvent('1')
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 10:53:45 --> Call to undefined method App\Entities\Event::set()
+in APPPATH/Controllers/Events.php on line 164.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->approveEvent('1')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 10:55:20 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 867.
+ 1 SYSTEMPATH/BaseModel.php(867): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update([...], [])
+ 3 SYSTEMPATH/BaseModel.php(657): CodeIgniter\Model->update('1', Object(App\Entities\Event))
+ 4 APPPATH/Controllers/Events.php(166): CodeIgniter\BaseModel->save(Object(App\Entities\Event))
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->approveEvent('1')
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 10:56:23 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 867.
+ 1 SYSTEMPATH/BaseModel.php(867): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update([...], [])
+ 3 SYSTEMPATH/BaseModel.php(657): CodeIgniter\Model->update('1', Object(App\Entities\Event))
+ 4 APPPATH/Controllers/Events.php(166): CodeIgniter\BaseModel->save(Object(App\Entities\Event))
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->approveEvent('1')
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 10:57:32 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 867.
+ 1 SYSTEMPATH/BaseModel.php(867): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update([...], [])
+ 3 SYSTEMPATH/BaseModel.php(657): CodeIgniter\Model->update('1', Object(App\Entities\Event))
+ 4 APPPATH/Controllers/Events.php(166): CodeIgniter\BaseModel->save(Object(App\Entities\Event))
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->approveEvent('1')
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 10:59:44 --> Call to undefined method App\Entities\Event::save()
+in APPPATH/Entities/Event.php on line 21.
+ 1 APPPATH/Controllers/Events.php(164): App\Entities\Event->update([...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->approveEvent('1')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 11:00:44 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 867.
+ 1 SYSTEMPATH/BaseModel.php(867): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update([...], [])
+ 3 SYSTEMPATH/BaseModel.php(657): CodeIgniter\Model->update('1', Object(App\Entities\Event))
+ 4 APPPATH/Entities/Event.php(22): CodeIgniter\BaseModel->save(Object(App\Entities\Event))
+ 5 APPPATH/Controllers/Events.php(164): App\Entities\Event->update([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->approveEvent('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 11:01:12 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 867.
+ 1 SYSTEMPATH/BaseModel.php(867): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update([...], [])
+ 3 SYSTEMPATH/BaseModel.php(657): CodeIgniter\Model->update('1', Object(App\Entities\Event))
+ 4 APPPATH/Entities/Event.php(22): CodeIgniter\BaseModel->save(Object(App\Entities\Event))
+ 5 APPPATH/Controllers/Events.php(163): App\Entities\Event->update([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->approveEvent('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 11:01:15 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 867.
+ 1 SYSTEMPATH/BaseModel.php(867): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update([...], [])
+ 3 SYSTEMPATH/BaseModel.php(657): CodeIgniter\Model->update('1', Object(App\Entities\Event))
+ 4 APPPATH/Entities/Event.php(22): CodeIgniter\BaseModel->save(Object(App\Entities\Event))
+ 5 APPPATH/Controllers/Events.php(163): App\Entities\Event->update([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->approveEvent('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

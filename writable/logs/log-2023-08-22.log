@@ -1,0 +1,87 @@
+CRITICAL - 2023-08-22 05:49:57 --> Undefined variable $remembered_login
+in APPPATH/Libraries/Authentication.php on line 98.
+ 1 APPPATH/Libraries/Authentication.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $remembered_login', 'APPPATH/Libraries/Authentication.php', 98)
+ 2 APPPATH/Libraries/Authentication.php(124): App\libraries\Authentication->getUserFromRememberCookie()
+ 3 APPPATH/Libraries/Authentication.php(133): App\libraries\Authentication->getCurrentUser()
+ 4 APPPATH/Filters/GuestFilter.php(11): App\libraries\Authentication->isLoggedIn()
+ 5 SYSTEMPATH/Filters/Filters.php(173): App\Filters\GuestFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 6 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('login', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-22 06:16:46 --> Class "App\Commands\RememberedLoginModel" not found
+in APPPATH/Commands/DeleteExpiredRememberedLogins.php on line 14.
+ 1 SYSTEMPATH/CLI/Commands.php(63): App\Commands\DeleteExpiredRememberedLogins->run([])
+ 2 SYSTEMPATH/CLI/CommandRunner.php(65): CodeIgniter\CLI\Commands->run('auth:cleanup', [])
+ 3 SYSTEMPATH/CLI/CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index([])
+ 4 SYSTEMPATH/CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+ 6 SYSTEMPATH/CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+ 8 ROOTPATH/spark(98): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-08-22 06:19:02 --> Call to undefined function App\Models\data()
+in APPPATH/Models/RememberedLoginModel.php on line 66.
+ 1 APPPATH/Commands/DeleteExpiredRememberedLogins.php(17): App\Models\RememberedLoginModel->deleteExpired()
+ 2 SYSTEMPATH/CLI/Commands.php(63): App\Commands\DeleteExpiredRememberedLogins->run([])
+ 3 SYSTEMPATH/CLI/CommandRunner.php(65): CodeIgniter\CLI\Commands->run('auth:cleanup', [])
+ 4 SYSTEMPATH/CLI/CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index([])
+ 5 SYSTEMPATH/CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+ 7 SYSTEMPATH/CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+ 9 ROOTPATH/spark(98): CodeIgniter\CLI\Console->run()
+ERROR - 2023-08-22 06:20:51 --> Error connecting to the database: mysqli_sql_exception: Operation timed out in /Users/tiffany/Desktop/dev/ia-tiffany/www/system/Database/MySQLi/Connection.php:170
+Stack trace:
+#0 /Users/tiffany/Desktop/dev/ia-tiffany/www/system/Database/MySQLi/Connection.php(170): mysqli->real_connect('172.19.0.1', 'root', Object(SensitiveParameterValue), 'taskapp', 3306, '', 0)
+#1 /Users/tiffany/Desktop/dev/ia-tiffany/www/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/tiffany/Desktop/dev/ia-tiffany/www/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/tiffany/Desktop/dev/ia-tiffany/www/system/Database/BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `re...', Array, false)
+#4 /Users/tiffany/Desktop/dev/ia-tiffany/www/system/Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 /Users/tiffany/Desktop/dev/ia-tiffany/www/system/BaseModel.php(984): CodeIgniter\Model->doDelete(NULL, false)
+#6 /Users/tiffany/Desktop/dev/ia-tiffany/www/app/Models/RememberedLoginModel.php(67): CodeIgniter\BaseModel->delete()
+#7 /Users/tiffany/Desktop/dev/ia-tiffany/www/app/Commands/DeleteExpiredRememberedLogins.php(17): App\Models\RememberedLoginModel->deleteExpired()
+#8 /Users/tiffany/Desktop/dev/ia-tiffany/www/system/CLI/Commands.php(63): App\Commands\DeleteExpiredRememberedLogins->run(Array)
+#9 /Users/tiffany/Desktop/dev/ia-tiffany/www/system/CLI/CommandRunner.php(65): CodeIgniter\CLI\Commands->run('auth:cleanup', Array)
+#10 /Users/tiffany/Desktop/dev/ia-tiffany/www/system/CLI/CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 /Users/tiffany/Desktop/dev/ia-tiffany/www/system/CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 /Users/tiffany/Desktop/dev/ia-tiffany/www/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 /Users/tiffany/Desktop/dev/ia-tiffany/www/system/CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 /Users/tiffany/Desktop/dev/ia-tiffany/www/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 /Users/tiffany/Desktop/dev/ia-tiffany/www/spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Operation timed out in /Users/tiffany/Desktop/dev/ia-tiffany/www/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Users/tiffany/Desktop/dev/ia-tiffany/www/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/tiffany/Desktop/dev/ia-tiffany/www/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/tiffany/Desktop/dev/ia-tiffany/www/system/Database/BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `re...', Array, false)
+#3 /Users/tiffany/Desktop/dev/ia-tiffany/www/system/Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#4 /Users/tiffany/Desktop/dev/ia-tiffany/www/system/BaseModel.php(984): CodeIgniter\Model->doDelete(NULL, false)
+#5 /Users/tiffany/Desktop/dev/ia-tiffany/www/app/Models/RememberedLoginModel.php(67): CodeIgniter\BaseModel->delete()
+#6 /Users/tiffany/Desktop/dev/ia-tiffany/www/app/Commands/DeleteExpiredRememberedLogins.php(17): App\Models\RememberedLoginModel->deleteExpired()
+#7 /Users/tiffany/Desktop/dev/ia-tiffany/www/system/CLI/Commands.php(63): App\Commands\DeleteExpiredRememberedLogins->run(Array)
+#8 /Users/tiffany/Desktop/dev/ia-tiffany/www/system/CLI/CommandRunner.php(65): CodeIgniter\CLI\Commands->run('auth:cleanup', Array)
+#9 /Users/tiffany/Desktop/dev/ia-tiffany/www/system/CLI/CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#10 /Users/tiffany/Desktop/dev/ia-tiffany/www/system/CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#11 /Users/tiffany/Desktop/dev/ia-tiffany/www/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#12 /Users/tiffany/Desktop/dev/ia-tiffany/www/system/CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Users/tiffany/Desktop/dev/ia-tiffany/www/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#14 /Users/tiffany/Desktop/dev/ia-tiffany/www/spark(98): CodeIgniter\CLI\Console->run()
+#15 {main}
+CRITICAL - 2023-08-22 06:20:51 --> Unable to connect to the database.
+Main connection [MySQLi]: Operation timed out
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `remembered_login`
+WHERE `expires_at` < :expires_at:', [...], false)
+ 3 SYSTEMPATH/Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+ 4 SYSTEMPATH/BaseModel.php(984): CodeIgniter\Model->doDelete(null, false)
+ 5 APPPATH/Models/RememberedLoginModel.php(67): CodeIgniter\BaseModel->delete()
+ 6 APPPATH/Commands/DeleteExpiredRememberedLogins.php(17): App\Models\RememberedLoginModel->deleteExpired()
+ 7 SYSTEMPATH/CLI/Commands.php(63): App\Commands\DeleteExpiredRememberedLogins->run([])
+ 8 SYSTEMPATH/CLI/CommandRunner.php(65): CodeIgniter\CLI\Commands->run('auth:cleanup', [])
+ 9 SYSTEMPATH/CLI/CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index([])
+10 SYSTEMPATH/CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', [...])
+11 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+12 SYSTEMPATH/CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+14 ROOTPATH/spark(98): CodeIgniter\CLI\Console->run()

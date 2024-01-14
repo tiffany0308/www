@@ -1,0 +1,50 @@
+CRITICAL - 2023-11-14 06:52:14 --> Class "App\Models\VolunteerModel" not found
+in APPPATH/Controllers/Volunteers.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Volunteers->showVolunteerForm('1')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Volunteers))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 06:54:43 --> Class "App\Models\VolunteerModel" not found
+in APPPATH/Controllers/Volunteers.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Volunteers->showVolunteerForm('1')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Volunteers))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 06:54:44 --> Class "App\Models\VolunteerModel" not found
+in APPPATH/Controllers/Volunteers.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Volunteers->showVolunteerForm('1')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Volunteers))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 06:54:46 --> Class "App\Models\VolunteerModel" not found
+in APPPATH/Controllers/Volunteers.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Volunteers->showVolunteerForm('1')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Volunteers))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 06:54:54 --> mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, App\Entities\Volunter given
+in SYSTEMPATH/Database/MySQLi/Result.php on line 148.
+ 1 SYSTEMPATH/Database/MySQLi/Result.php(148): mysqli_result->fetch_object('App\\Entities\\Volunter')
+ 2 SYSTEMPATH/Database/BaseResult.php(149): CodeIgniter\Database\MySQLi\Result->fetchObject('App\\Entities\\Volunter')
+ 3 SYSTEMPATH/Database/BaseResult.php(106): CodeIgniter\Database\BaseResult->getCustomResultObject('App\\Entities\\Volunter')
+ 4 SYSTEMPATH/Database/BaseResult.php(377): CodeIgniter\Database\BaseResult->getResult('App\\Entities\\Volunter')
+ 5 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseResult->getFirstRow('App\\Entities\\Volunter')
+ 6 SYSTEMPATH/BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Controllers/Volunteers.php(17): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Volunteers->showVolunteerForm('1')
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Volunteers))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 06:58:54 --> mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, App\Entities\Volunter given
+in SYSTEMPATH/Database/MySQLi/Result.php on line 148.
+ 1 SYSTEMPATH/Database/MySQLi/Result.php(148): mysqli_result->fetch_object('App\\Entities\\Volunter')
+ 2 SYSTEMPATH/Database/BaseResult.php(149): CodeIgniter\Database\MySQLi\Result->fetchObject('App\\Entities\\Volunter')
+ 3 SYSTEMPATH/Database/BaseResult.php(106): CodeIgniter\Database\BaseResult->getCustomResultObject('App\\Entities\\Volunter')
+ 4 SYSTEMPATH/Database/BaseResult.php(377): CodeIgniter\Database\BaseResult->getResult('App\\Entities\\Volunter')
+ 5 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseResult->getFirstRow('App\\Entities\\Volunter')
+ 6 SYSTEMPATH/BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Controllers/Volunteers.php(17): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Volunteers->showVolunteerForm('1')
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Volunteers))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

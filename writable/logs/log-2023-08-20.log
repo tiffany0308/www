@@ -1,0 +1,84 @@
+CRITICAL - 2023-08-20 04:14:56 --> The file "IMG_5162.jpg" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-20 04:15:57 --> The file "IMG_5162.jpg" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-20 04:23:31 --> The file "IMG_5136.jpg" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-20 04:25:42 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'admin', 'taskapp', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/html/system/Model.php(182): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/system/BaseModel.php(524): CodeIgniter\Model->doFind(true, '15')
+#6 /var/www/html/app/Libraries/Authentication.php(54): CodeIgniter\BaseModel->find('15')
+#7 /var/www/html/app/Libraries/Authentication.php(67): App\libraries\Authentication->getCurrentUser()
+#8 /var/www/html/app/Filters/LoginFilter.php(11): App\libraries\Authentication->isLoggedIn()
+#9 /var/www/html/system/Filters/Filters.php(173): App\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#10 /var/www/html/system/CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('profileimage/ed...', 'before')
+#11 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /var/www/html/system/Model.php(182): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/system/BaseModel.php(524): CodeIgniter\Model->doFind(true, '15')
+#5 /var/www/html/app/Libraries/Authentication.php(54): CodeIgniter\BaseModel->find('15')
+#6 /var/www/html/app/Libraries/Authentication.php(67): App\libraries\Authentication->getCurrentUser()
+#7 /var/www/html/app/Filters/LoginFilter.php(11): App\libraries\Authentication->isLoggedIn()
+#8 /var/www/html/system/Filters/Filters.php(173): App\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#9 /var/www/html/system/CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('profileimage/ed...', 'before')
+#10 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-08-20 04:25:42 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `user`.`id` = :user.id:', [...], false)
+ 3 SYSTEMPATH/Model.php(182): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(524): CodeIgniter\Model->doFind(true, '15')
+ 5 APPPATH/Libraries/Authentication.php(54): CodeIgniter\BaseModel->find('15')
+ 6 APPPATH/Libraries/Authentication.php(67): App\libraries\Authentication->getCurrentUser()
+ 7 APPPATH/Filters/LoginFilter.php(11): App\libraries\Authentication->isLoggedIn()
+ 8 SYSTEMPATH/Filters/Filters.php(173): App\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 9 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('profileimage/edit', 'before')
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-20 04:26:02 --> The file "HK RISC-V Day 2023.pdf" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-20 04:28:31 --> The file "HK RISC-V Day 2023.pdf" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-20 06:59:09 --> The file "IMG_5162.jpg" exceeds your upload_max_filesize ini directive. 1
+in APPPATH/Controllers/Profileimage.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Profileimage->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profileimage))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,150 @@
+ERROR - 2023-11-25 03:08:13 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-25 03:08:13 --> 220 smtp.gmail.com ESMTP ei44-20020a056a0080ec00b006cb997a3210sm4007715pfb.193 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [210.209.116.232]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [210.209.116.232]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ei44-20020a056a0080ec00b006cb997a3210sm4007715pfb.193 - gsmtp
+
+ERROR - 2023-11-25 03:22:55 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-25 03:22:55 --> You did not specify a SMTP hostname.
+CRITICAL - 2023-11-25 03:30:31 --> Class "App\Controllers\UserModel" not found
+in APPPATH/Controllers/Volunteers.php on line 57.
+ 1 APPPATH/Controllers/Volunteers.php(39): App\Controllers\Volunteers->sendVolunteerEmail('22', 39)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Volunteers->saveVolunteerForm('22')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Volunteers))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-25 03:31:25 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-25 03:31:25 --> 220 smtp.gmail.com ESMTP f17-20020a63de11000000b005ab7b055573sm4397487pgg.79 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [210.209.116.232]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [210.209.116.232]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials f17-20020a63de11000000b005ab7b055573sm4397487pgg.79 - gsmtp
+
+CRITICAL - 2023-11-25 03:54:41 --> foreach() argument must be of type array|object, string given
+in APPPATH/Views/Events/show.php on line 56.
+ 1 APPPATH/Views/Events/show.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH/Views/Events/show.php', 56)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/show.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/show', [], true)
+ 5 APPPATH/Controllers/Events.php(37): view('Events/show', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('22')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-25 03:58:40 --> foreach() argument must be of type array|object, string given
+in APPPATH/Views/Events/show.php on line 56.
+ 1 APPPATH/Views/Events/show.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH/Views/Events/show.php', 56)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/show.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/show', [], true)
+ 5 APPPATH/Controllers/Events.php(37): view('Events/show', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('22')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-25 04:45:37 --> implode(): Argument #2 ($array) must be of type ?array, string given
+in APPPATH/Views/Events/show.php on line 56.
+ 1 APPPATH/Views/Events/show.php(56): implode(', ', 'online,in-depth discussion,accounting,business')
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/show.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/show', [], true)
+ 5 APPPATH/Controllers/Events.php(37): view('Events/show', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('22')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-25 04:49:23 --> syntax error, unexpected end of file
+in APPPATH/Views/Events/show.php on line 88.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/show', [], true)
+ 3 APPPATH/Controllers/Events.php(37): view('Events/show', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('22')
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-25 04:53:26 --> foreach() argument must be of type array|object, string given
+in APPPATH/Views/Events/show.php on line 56.
+ 1 APPPATH/Views/Events/show.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH/Views/Events/show.php', 56)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/show.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/show', [], true)
+ 5 APPPATH/Controllers/Events.php(37): view('Events/show', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('22')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-25 05:09:26 --> explode(): Passing null to parameter #2 ($string) of type string is deprecated
+in APPPATH/Views/Events/show.php on line 56.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'explode(): Passing null to parameter #2 ($string) of type string is deprecated', 'APPPATH/Views/Events/show.php', 56)
+ 2 APPPATH/Views/Events/show.php(56): explode(',', null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/show.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/show', [], true)
+ 6 APPPATH/Controllers/Events.php(37): view('Events/show', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('1')
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-25 05:10:57 --> explode(): Passing null to parameter #2 ($string) of type string is deprecated
+in APPPATH/Views/Events/show.php on line 55.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'explode(): Passing null to parameter #2 ($string) of type string is deprecated', 'APPPATH/Views/Events/show.php', 55)
+ 2 APPPATH/Views/Events/show.php(55): explode(',', null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/show.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/show', [], true)
+ 6 APPPATH/Controllers/Events.php(37): view('Events/show', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('1')
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-25 05:11:05 --> explode(): Passing null to parameter #2 ($string) of type string is deprecated
+in APPPATH/Views/Events/show.php on line 55.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'explode(): Passing null to parameter #2 ($string) of type string is deprecated', 'APPPATH/Views/Events/show.php', 55)
+ 2 APPPATH/Views/Events/show.php(55): explode(',', null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Events/show.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('Events/show', [], true)
+ 6 APPPATH/Controllers/Events.php(37): view('Events/show', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Events->show('1')
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Events))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

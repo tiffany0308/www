@@ -1,0 +1,64 @@
+CRITICAL - 2023-08-15 08:02:29 --> Call to undefined function App\Entities\data()
+in APPPATH/Entities/User.php on line 38.
+ 1 APPPATH/Controllers/Password.php(20): App\Entities\User->startPasswordReset()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Password->processForgot()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Password))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-15 08:07:56 --> Call to undefined function App\Entities\data()
+in APPPATH/Entities/User.php on line 38.
+ 1 APPPATH/Controllers/Password.php(20): App\Entities\User->startPasswordReset()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Password->processForgot()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Password))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-15 11:36:01 --> Invalid file: layout/defualt.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/defualt.php')
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('layout/defualt', [], true)
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('/Password/reset_sent', [], true)
+ 4 APPPATH/Controllers/Password.php(39): view('/Password/reset_sent')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Password->resetSent()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Password))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-15 11:36:29 --> Invalid file: layout/default.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/default.php')
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('layout/default', [], true)
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('/Password/reset_sent', [], true)
+ 4 APPPATH/Controllers/Password.php(39): view('/Password/reset_sent')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Password->resetSent()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Password))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-15 11:36:32 --> Invalid file: layout/default.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/default.php')
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('layout/default', [], true)
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('/Password/reset_sent', [], true)
+ 4 APPPATH/Controllers/Password.php(39): view('/Password/reset_sent')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Password->resetSent()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Password))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-15 11:41:17 --> Invalid file: layout/default.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/default.php')
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('layout/default', [], true)
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('/Password/reset_sent', [], true)
+ 4 APPPATH/Controllers/Password.php(39): view('/Password/reset_sent')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Password->resetSent()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Password))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-15 11:41:32 --> Invalid file: layout/default.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/default.php')
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('layout/default', [], true)
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('/Password/reset_sent', [], true)
+ 4 APPPATH/Controllers/Password.php(39): view('/Password/reset_sent')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Password->resetSent()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Password))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
